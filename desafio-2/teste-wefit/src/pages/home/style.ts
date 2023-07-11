@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { media } from "../../themes/media";
 
-export const HomeContainer = styled.body`
+export const HomeContainer = styled.section`
     width: 100vw;  
     display: flex;
     justify-content: center;
 `;
 
-export const Showcase = styled.section`
+export const Showcase = styled.div`
     width: 66.67vw;
     margin-top: 3vh;
     display: grid;

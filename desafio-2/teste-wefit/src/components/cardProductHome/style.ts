@@ -8,16 +8,22 @@ export const CardProduct = styled.div`
     flex-direction: column;
 `;
 
-export const AddToCartButton = styled.button`
-    background-color: #009EDD;
+type AddToCartButtonType = string | "ADICIONAR AO CARRINHO" | "ITEM ADICIONADO"
+
+export const AddToCartButton = styled.button<{ type: AddToCartButtonType }>`
+    background-color: ${({type}) => type === "ADICIONAR AO CARRINHO" ? "#009EDD" : "#039B00"};
+    transition: background-color 0.2s;
     border-radius: 4px;
     border: 0;
-    padding: 0.75rem 0.5rem;
+    padding: 1.5rem 0.5rem;
     color: #fff;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 `;
+
 
 export const ButtonTxt = styled.h2`
     font-family: 'Open Sans';
@@ -28,12 +34,15 @@ export const ButtonTxt = styled.h2`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    margin-left: 1.8rem;
 `;
 
 export const CartButtonWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
     h2 {
         margin-right: 1rem;
         font-weight: 400;
@@ -75,4 +84,10 @@ export const ImgCardContainer = styled.div`
 
 export const ImgCard = styled.img`
     width: 45%;
+`;
+
+export const ButtonContent = styled.div`
+    position: absolute;
+    left: 20%;
+    display: flex;
 `;

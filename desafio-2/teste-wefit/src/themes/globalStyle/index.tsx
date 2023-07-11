@@ -33,6 +33,9 @@ export const GlobalStyle = createGlobalStyle`
     footer, header, hgroup, menu, nav, section {
         display: block;
     }
+    #root {
+        min-height: 100vh;
+    }
     body {
         line-height: 1;
         background-color: #2F2E41;
