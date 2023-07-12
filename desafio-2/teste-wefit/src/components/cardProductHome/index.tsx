@@ -28,7 +28,9 @@ export const CardProductHome = (product: IProduct) => {
                         <S.CartSVG src={CartSVG} />
                         <h2>{quantity}</h2>
                     </S.CartButtonWrapper>
-                    <S.ButtonTxt>{buttonText}</S.ButtonTxt>
+                    <div>
+                        <S.ButtonTxt>{buttonText}</S.ButtonTxt>
+                    </div>
                 </S.ButtonContent>
             </S.AddToCartButton>
         </S.CardProduct>

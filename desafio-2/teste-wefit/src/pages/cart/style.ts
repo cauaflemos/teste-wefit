@@ -20,7 +20,18 @@ export const ShowcaseEmptyCart = styled.div`
     `}
 `;
 
+
 export const Showcase = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    max-height: 50vh;
+    overflow-y: auto;
+
+`;
+
+export const CartContent = styled.div`
     width: 66.67vw;
     margin-top: 3vh;
     background-color: #fff;
@@ -28,7 +39,7 @@ export const Showcase = styled.div`
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 1.8rem;
+    padding: 1.5rem;
 
     :last-child {
         margin: 0;
@@ -41,6 +52,7 @@ export const Showcase = styled.div`
         position: relative;
         flex-direction: column;
         padding: 1rem;
+        justify-content: space-between;
         height: 88vh;
     `}
 `;

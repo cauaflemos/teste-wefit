@@ -15,7 +15,7 @@ export const AddToCartButton = styled.button<{ type: AddToCartButtonType }>`
     transition: background-color 0.2s;
     border-radius: 4px;
     border: 0;
-    padding: 1.5rem 0.5rem;
+    padding: 1.2rem 0.5rem;
     color: #fff;
     display: flex;
     position: relative;
@@ -34,8 +34,10 @@ export const ButtonTxt = styled.h2`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
-    margin-left: 1.8rem;
+    margin-left: 0.5rem;
+    @media (min-width: 1800px) {
+        margin-left: 3rem;
+    }
 `;
 
 export const CartButtonWrapper = styled.div`
@@ -88,6 +90,6 @@ export const ImgCard = styled.img`
 
 export const ButtonContent = styled.div`
     position: absolute;
-    left: 20%;
+    left: 15%;
     display: flex;
 `;

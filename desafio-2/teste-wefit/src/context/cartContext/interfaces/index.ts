@@ -19,6 +19,7 @@ export type ActionType =
     | { type: 'ADD_TO_CART'; product: IProduct }
     | { type: 'REMOVE_FROM_CART'; productId: number }
     | { type: 'UPDATE_ITEM'; payload: IActionUpdateQtt }
+    | { type: 'RESET_CART'; }
     | { type: 'DECREMENT_ITEM'; productId: number };
 
 export interface CartProviderProps {

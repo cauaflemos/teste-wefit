@@ -3,22 +3,20 @@ import { media } from "../../themes/media";
 
 export const TotalOrderContainer = styled.div`
     border-top: 1px #999999 solid;
+    padding-top: 1.2rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     ${media.SMARTPHONE`
+        padding-top: 0;
+        border-top: 0;
         display: block;
         width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
         box-sizing: border-box;
-        padding: 0 1rem 1rem 1rem;
     `}
 `;
 
 export const PriceContainer = styled.div`
-    background-color: red;
     display: flex;
     align-items: center;
     h2 {
@@ -28,7 +26,7 @@ export const PriceContainer = styled.div`
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        padding: 0 1rem;
+        padding: 0 1rem 0 2rem;
     }
     h3 {
         font-size: 0.87rem;
@@ -48,22 +46,7 @@ export const PriceContainer = styled.div`
         align-items: center;
         padding: 1rem 0 0.8rem 0;
         h2 {
-            color: #2F2E41;
-            font-family: 'Open Sans';
-            font-size: 1.5rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
             padding: 0 1rem;
-        }
-        h3 {
-            font-size: 0.87rem;
-            color: #999;
-            text-align: center;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
         }
     `}
 `;
@@ -73,8 +56,8 @@ export const FinishButton = styled.button`
     border: none;
     border-radius: 4px;
     background: #009EDD;
-    padding: 1rem 0;
-    width: 30%;
+    padding: 0.75rem 0;
+    width: 26%;
 
     h2 {
         color: #FFF;

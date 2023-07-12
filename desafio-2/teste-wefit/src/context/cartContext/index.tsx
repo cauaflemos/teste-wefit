@@ -23,6 +23,8 @@ const cartReducer = (state: Cart, action: ActionType) => {
         case 'REMOVE_FROM_CART':
             updatedItems = state.items.filter(e => e.product.id !== action.productId);
             return { ...state, items: updatedItems };
+        case 'RESET_CART':
+            return { ...state, items: [] };
         case 'UPDATE_ITEM':
             let itemToChange = state.items.find(e => e.product.id === action.payload.productId);
             if (itemToChange) {

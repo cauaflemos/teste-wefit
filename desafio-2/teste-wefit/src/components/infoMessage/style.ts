@@ -1,14 +1,19 @@
 import styled from "styled-components";
 import { media } from "../../themes/media";
 
-export const CartSVG = styled.img`
-    
+export const Empty = styled.img`
     ${media.SMARTPHONE`
         width: 100%;
     `}
 `;
 
-export const EmptyCartWrapper = styled.div`
+export const Checkout = styled.img`
+    ${media.SMARTPHONE` 
+        width: 90%;
+    `}
+`;
+
+export const InfoMessageWrapper = styled.div`
     text-align: center;
     display: grid;
     place-items: center;
@@ -18,7 +23,7 @@ export const EmptyCartWrapper = styled.div`
     `}
 `;
 
-export const EmptyCartTxt = styled.h1`
+export const InfoMessageTxt = styled.h1`
     color: #2F2E41;
     font-weight: 700;
     font-size: 1.3rem;
@@ -35,12 +40,12 @@ export const EmptyCartTxt = styled.h1`
     `}
 `;
 
-export const EmptyCartButton = styled.button`
+export const InfoMessageButton = styled.button`
     border: none;
     background-color: #009EDD;
     padding: 0.7rem 0;
     border-radius: 4px;
-    width: 50%;
+    width: 19%;
     margin-top: 2rem;
     cursor: pointer;
 
